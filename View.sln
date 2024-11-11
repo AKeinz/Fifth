@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View", "View\View.csproj", "{1B0B1F7F-003B-43F6-AB29-E1B0B37D78FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{1E7906E2-3F7F-4A9D-A57D-A2ADC61EB54A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic", "BusinessLogic\BusinessLogic.csproj", "{D7CDD2F8-B72B-4B5C-8A72-16E6F7EFB560}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B0B1F7F-003B-43F6-AB29-E1B0B37D78FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B0B1F7F-003B-43F6-AB29-E1B0B37D78FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B0B1F7F-003B-43F6-AB29-E1B0B37D78FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B0B1F7F-003B-43F6-AB29-E1B0B37D78FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E7906E2-3F7F-4A9D-A57D-A2ADC61EB54A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E7906E2-3F7F-4A9D-A57D-A2ADC61EB54A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E7906E2-3F7F-4A9D-A57D-A2ADC61EB54A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E7906E2-3F7F-4A9D-A57D-A2ADC61EB54A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7CDD2F8-B72B-4B5C-8A72-16E6F7EFB560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7CDD2F8-B72B-4B5C-8A72-16E6F7EFB560}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7CDD2F8-B72B-4B5C-8A72-16E6F7EFB560}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7CDD2F8-B72B-4B5C-8A72-16E6F7EFB560}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F5D82925-287B-4DA6-A4ED-8E7271B5376F}
+	EndGlobalSection
+EndGlobal

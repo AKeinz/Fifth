@@ -1,0 +1,58 @@
+﻿<Window x:Class="View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:View"
+        xmlns:mv="clr-namespace:BusinessLogic;assembly=BusinessLogic"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <mv:Presenter></mv:Presenter>
+    </Window.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.9*"/>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="0.3*"/>
+            <ColumnDefinition Width="0.1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.6*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="0.9*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="0.9*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="0.9*"/>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="0.6*"/>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="1*"/>
+
+        </Grid.RowDefinitions>
+        <ListView Grid.Column="0" Grid.Row="0" Grid.RowSpan="13" ItemsSource="{Binding Students}" SelectedItem="{Binding CurrentStudent}" SelectionMode="Single">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Id}" Header="Номер" Width="50"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Name}" Header="Имя" Width="140"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Specialty}" Header="Специальность" Width="160"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Group}" Header="Группа" Width="160"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Grid.Column="2" Content="Имя" Grid.Row="1"/>
+        <TextBox Grid.Row="2" TextWrapping="Wrap" Text="{Binding CurrentStudent.Name}" Grid.Column="2"/>
+        <Label Grid.Column="2" Content="Специальность" Grid.Row="4"/>
+        <TextBox Grid.Column="2" Grid.Row="5" TextWrapping="Wrap" Text="{Binding CurrentStudent.Specialty}"/>
+        <Label Grid.Column="2" Content="Группа" Grid.Row="7"/>
+        <TextBox Grid.Column="2" Grid.Row="8" TextWrapping="Wrap" Text="{Binding CurrentStudent.Group}"/>
+        <Button Grid.Column="2" Content="Добавить" Grid.Row="10" Command="{Binding AddStudentCommand}"/>
+        <Button Grid.Column="2" Content="Удалить" Grid.Row="12" Command="{Binding RemoveStudentCommand}"/>
+
+    </Grid>
+</Window>
