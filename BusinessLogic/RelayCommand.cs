@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace BusinessLogic
@@ -10,29 +6,18 @@ namespace BusinessLogic
     public class RelayCommand : ICommand
     {
         public event EventHandler CanExecuteChanged;
-        public Action _Execute { get; set; }
+        private event Action _execute;
+        private event Func<bool> _canExecute;
 
-        public Func<bool> _CanExecute { get; set; }
-        public RelayCommand(Action execute)
-        {
-            _Execute = execute;
-        }
-
+        public RelayCommand(Action Execute)
+        { _execute = Execute; }
         public RelayCommand(Action execute, Func<bool> canExecute)
         {
-            _Execute = execute;
-            _CanExecute = canExecute;
+            _execute = execute;
+            _canExecute = canExecute;
         }
 
-        public bool CanExecute(object parameter)
-        {
-            return _CanExecute == null ? true : _CanExecute();
-        }
-
-        public void Execute(object parameter)
-        {
-            _Execute();
-
-        }
+        public bool CanExecute(object parameter) => _canExecute == null ? true : _canExecute();
+        public void Execute(object parameter) => _execute();
     }
 }

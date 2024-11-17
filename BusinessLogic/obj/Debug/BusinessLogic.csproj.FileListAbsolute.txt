@@ -1,0 +1,9 @@
+C:\Users\Глеб\Desktop\Fifth-master\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\Users\Глеб\Desktop\Fifth-master\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\Users\Глеб\Desktop\Fifth-master\BusinessLogic\bin\Debug\Model.dll
+C:\Users\Глеб\Desktop\Fifth-master\BusinessLogic\bin\Debug\Model.pdb
+C:\Users\Глеб\Desktop\Fifth-master\BusinessLogic\obj\Debug\BusinessLogic.csproj.AssemblyReference.cache
+C:\Users\Глеб\Desktop\Fifth-master\BusinessLogic\obj\Debug\BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\Глеб\Desktop\Fifth-master\BusinessLogic\obj\Debug\Business.CF5D6E35.Up2Date
+C:\Users\Глеб\Desktop\Fifth-master\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\Users\Глеб\Desktop\Fifth-master\BusinessLogic\obj\Debug\BusinessLogic.pdb

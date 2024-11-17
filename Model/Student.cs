@@ -1,45 +1,41 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 
 namespace Model
 {
     public class Student : INotifyPropertyChanged
     {
-        private int id;
         public int Id
         {
-            get { return id; }
-            set { id = value; OnPropertyChanged(nameof(Id)); }
+            get { return _id; }
+            set { _id = value; OnPropertyChanged(nameof(Id)); }
         }
+        private int _id;
 
-        private string name;
         public string Name
         {
-            get { return name; }
-            set { name = value; OnPropertyChanged(nameof(Name)); }
+            get { return _name; }
+            set { _name = value; OnPropertyChanged(nameof(Name)); }
         }
-        private string specialty;
+        private string _name;
+
         public string Specialty
         {
-            get { return specialty; }
-            set { specialty = value; OnPropertyChanged(nameof(Specialty)); }
+            get { return _specialty; }
+            set { _specialty = value; OnPropertyChanged(nameof(Specialty)); }
         }
-        private string group;
+        private string _specialty;
+
         public string Group
         {
-            get { return group; }
-            set { group = value; OnPropertyChanged(nameof(Group)); }
+            get { return _group; }
+            set { _group = value; OnPropertyChanged(nameof(Group)); }
         }
+        private string _group;
 
         private void OnPropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-
         public event PropertyChangedEventHandler PropertyChanged;
     }
 }
